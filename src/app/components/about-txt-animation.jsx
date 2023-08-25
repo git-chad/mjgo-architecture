@@ -64,7 +64,7 @@ const WaveText = () => {
           href="#wavepath"
           startOffset={interpolatedOffset}
         >
-          TE AMO CULOSUCIO
+          ABOUT ME
         </AnimatedTextPath>
       </text>
     </svg>
