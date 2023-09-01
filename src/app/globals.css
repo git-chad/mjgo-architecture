@@ -2,22 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background-color: #f3f3f3;
+  --text-color: #1e1e1c;
+  --highlight-color: #eb8f1e;
+}
 
+body.dark-mode {
+  --background-color: #1e1e1c;
+  --text-color: #f3f3f3;
+  --highlight-color: #d43545;
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.grid-bg {
+  background-image: url("/grid.svg");
+  background-position: center;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+main h1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  opacity: 0;
+}
+
+main h1,
+h2 {
+  color: var(--text-color);
+}
+
+.char {
+  transform: translateY(500px);
+  transition: transform 0.5s;
+}
+
+a {
+  color: var(--text-color);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--highlight-color);
+}
+
+a.menu-toggle {
+  color: var(--highlight-color);
+}
+
+a.menu-toggle:hover {
+  color: var(--text-color);
+}
+
+a.menu-toggle rect {
+  fill: currentColor;
+}
+
+nav {
+  background-color: var(--background-color);
+  transform: translate(100%, 0);
+  transition: transform 0.5s;
+}
+
+nav.fake-mid {
+  background-color: var(--highlight-color);
+  transition-delay: 0.1s;
+}
+
+nav.fake-back {
+  background-color: var(--text-color);
+  transition-delay: 0.2s;
+}
+
+body.nav-toggle nav {
+  transform: translate(0, 0);
+  transition-delay: 0.2s;
+}
+
+body.nav-toggle nav.fake-mid {
+  transition-delay: 0.1s;
+}
+
+body.nav-toggle nav.fake-back {
+  transition-delay: 0s;
+}
+
+.darkmode-btn circle {
+  fill: currentColor;
+}
+
+.darkmode-btn rect {
+  stroke: currentColor;
+}
+
+.darkmode-btn g.toggle-circle circle {
+  transition: transform 0.3s;
+}
+
+.darkmode-btn:hover g.toggle-circle circle {
+  transform: scale(1.5);
+}
+
+.wiper-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 0vh;
+  background-color: var(--highlight-color);
+  transition: background-color 0.001s 2s;
 }

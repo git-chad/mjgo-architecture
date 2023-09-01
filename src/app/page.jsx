@@ -1,11 +1,12 @@
 "use client";
-
-import { NextUIProvider } from "@nextui-org/react";
 import Image from "next/image";
-import condoms from "/public/condoms.png";
 import { Montserrat } from "next/font/google";
 import { Cabin } from "next/font/google";
-import { motion } from "framer-motion";
+import building1 from "/public/building-1.png";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import SplitType from "split-type";
+
 const montserrat = Montserrat({ subsets: ["latin"] });
 const cabin = Cabin({
   weight: ["400", "500"],
@@ -14,31 +15,41 @@ const cabin = Cabin({
 });
 
 export default function Home() {
+  useEffect(() => {
+    const animText = new SplitType("#anim-h1");
+    const timeline = gsap.timeline();
+    const h1Tag = document.querySelector('h1.animated');
+
+    timeline
+    .set(".char", { opacity: 0 })
+    .set(h1Tag, {opacity: 0})
+    .to(".char", {
+      opacity: 1,
+      y: 0,
+      delay: 0.5,
+      duration: 0.2,
+      stagger: 0.05,
+    })
+    .to(h1Tag, {opacity: 1})
+  }, []);
+
   return (
-    <NextUIProvider>
-      <main
-        className="relative flex flex-row min-h-screen w-screen md:max-w-[900px] lg:max-w-[1376px] justify-start items-start md:items-center mt-36 md:mt-0 text-[#F3F3F3]"
-        // style={{ minHeight: "calc(100vh - 4rem)" }}
+    <main className="grid-bg h-screen w-screen">
+      <h1
+        id="anim-h1"
+        className={`animated ${montserrat.className} font-black text-start fixed left-8 bottom-[50vh] text-[16rem] leading-none`}
       >
-        {/* <div className="absolute z-0 opacity-20 blur-[5px]">
-          <Image src={condoms} alt="offices" loading="lazy"></Image>
-        </div> */}
-        <motion.div
-          initial={{ y: 10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.15 }}
-          className="z-10 flex flex-col md:flex-row max-w-full"
-        >
-          <h1
-            className={`${montserrat.className} p-8 z-10 text-6xl lg:text-8xl 2xl:text-9xl font-black max-w-[1376px]`}
-          >
-            MARTINA GONZALEZ ORLANDO
-          </h1>
-          <div className="relative z-0 opacity-20 blur-[5px]">
-            <Image src={condoms} alt="offices" loading="lazy" className="hidden md:visible"></Image>
-          </div>
-        </motion.div>
-      </main>
-    </NextUIProvider>
+        portfolio.
+      </h1>
+      <h2
+        className={`${cabin.className} fixed left-8 bottom-8 text-6xl font-semibold`}
+      >
+        Martina J. Gonzalez<br/>Orlando
+      </h2>
+
+      <div className="header-img w-[50vw] fixed bottom-0 right-0">
+        <Image src={building1} />
+      </div>
+    </main>
   );
 }

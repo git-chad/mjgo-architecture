@@ -1,8 +1,8 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-import Navbar from "./components/navbar";
+import { Cabin } from "next/font/google";
+import MenuToggle from "./components/menu-toggle";
 
-const inter = Inter({ subsets: ["latin"] });
+const cabin = Cabin({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Gonzalez Orlando",
@@ -18,10 +18,11 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
       </head>
-      <body className={`dark ${inter.className} flex flex-col items-center bg-[#1e1e1c]  overflow-hidden`}>
-        <nav className="z-50 fixed p-12">
-          <Navbar />
-        </nav>
+      <body className={`dark ${cabin.className} flex flex-col items-center overflow-hidden`}>
+
+        <div className="fixed top-8 right-8 z-10">
+          <MenuToggle />
+        </div>
         {children}
       </body>
     </html>
