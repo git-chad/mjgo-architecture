@@ -13,7 +13,7 @@ const cabin = Cabin({
 export default function About() {
 
   return (
-    <section className="grid-bg min-h-screen w-full flex flex-col justify-center items-center bg-gray-100">
+    <section className="grid-bg min-h-screen w-full flex flex-col justify-center items-center">
       <div className="container mx-auto px-6 md:px-0 flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
         <div className="flex-1 space-y-6">
           <h2

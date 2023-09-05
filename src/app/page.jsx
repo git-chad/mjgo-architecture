@@ -6,7 +6,6 @@ import building1 from "/public/building-1.png";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import SplitType from "split-type";
-import MouseTrail from "./components/mouse-trail";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const cabin = Cabin({
@@ -52,10 +51,6 @@ export default function Home() {
 
       <div className="header-img w-[60vw] sm:w-[50vw] fixed bottom-0 right-0">
         <Image src={building1} />
-      </div>
-
-      <div className="pointer-events-none">
-        <MouseTrail />
       </div>
     </main>
   );

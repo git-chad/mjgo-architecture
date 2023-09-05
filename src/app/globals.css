@@ -9,7 +9,7 @@
 }
 
 body.dark-mode {
-  --background-color: #1e1e1c;
+  --background-color: #1e1e1c !important;
   --text-color: #f3f3f3;
   --highlight-color: #d43545;
 }
