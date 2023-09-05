@@ -4,55 +4,59 @@ import React, { useEffect } from "react";
 
 const DarkToggle = () => {
   useEffect(() => {
-    const mqDark = window.matchMedia("(prefers-color-scheme: dark)");
     const darkModeToggle = document.querySelector("a.darkmode-btn");
     const darkModeToggleText = darkModeToggle.querySelector("span");
     const bodyTag = document.querySelector("body");
 
-    // adds/removes dark-mode classname to the body as well as listens to system preference
-    const updateSpan = () => {
-      if (mqDark.matches) {
-        bodyTag.classList.add("dark-mode");
-        darkModeToggleText.innerHTML = "Light mode";
+    const applyDarkMode = () => {
+      bodyTag.classList.add("dark-mode");
+      darkModeToggleText.innerHTML = "Light mode";
+      gsap.to("g.toggle-circle", { x: 43 });
+      saveThemeToLocalStorage("dark");
+    };
 
-        gsap.to("g.toggle-circle", { x: 43 });
+    const applyLightMode = () => {
+      bodyTag.classList.remove("dark-mode");
+      darkModeToggleText.innerHTML = "Dark mode";
+      gsap.to("g.toggle-circle", { x: 19 });
+      saveThemeToLocalStorage("light");
+    };
+
+    const saveThemeToLocalStorage = (theme) => {
+      localStorage.setItem("theme", theme);
+    };
+
+    const toggleTheme = () => {
+      if (!bodyTag.classList.contains("dark-mode")) {
+        applyDarkMode();
       } else {
-        bodyTag.classList.remove("dark-mode");
-        darkModeToggleText.innerHTML = "Dark mode";
-
-        gsap.to("g.toggle-circle", { x: 19 });
+        applyLightMode();
       }
     };
 
-    updateSpan();
-
-    // changes the span mode indicator if its clicked
-    darkModeToggle.addEventListener("click", function () {
-      if (!bodyTag.classList.contains("dark-mode")) {
-        darkModeToggleText.innerHTML = "Light mode";
-
-        gsap.to("g.toggle-circle", { x: 43 });
+    const initializeTheme = () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        applyDarkMode();
+      } else if (savedTheme === "light") {
+        applyLightMode();
       } else {
-        darkModeToggleText.innerHTML = "Dark mode";
-
-        gsap.to("g.toggle-circle", { x: 19 });
+        const mqDark = window.matchMedia("(prefers-color-scheme: dark)");
+        if (mqDark.matches) {
+          applyDarkMode();
+        } else {
+          applyLightMode();
+        }
       }
+    };
 
-      const timeline = gsap.timeline();
+    // Initialize theme on component mount
+    initializeTheme();
 
-      timeline
-        .set("div.wiper-screen", { height: "0%", top: "0%" })
-        .to("div.wiper-screen", { height: "100%" })
-        .add(function () {
-          bodyTag.classList.toggle("dark-mode");
-        })
-        .to("div.wiper-screen", { height: "0%", top: "100%" });
-    });
-
-    mqDark.addEventListener("change", updateSpan);
+    darkModeToggle.addEventListener("click", toggleTheme);
 
     return () => {
-      mqDark.removeEventListener("change", updateSpan);
+      darkModeToggle.removeEventListener("click", toggleTheme);
     };
   }, []);
 

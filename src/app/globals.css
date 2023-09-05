@@ -5,7 +5,7 @@
 :root {
   --background-color: #f3f3f3;
   --text-color: #1e1e1c;
-  --highlight-color: #eb8f1e;
+  --highlight-color: #52796f;
 }
 
 body.dark-mode {
@@ -27,11 +27,6 @@ body {
 main h1 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   opacity: 0;
-}
-
-main h1,
-h2 {
-  color: var(--text-color);
 }
 
 .char {
@@ -114,4 +109,24 @@ body.nav-toggle nav.fake-back {
   height: 0vh;
   background-color: var(--highlight-color);
   transition: background-color 0.001s 2s;
+}
+
+.profile-pic {
+  background-color: var(--highlight-color);
+}
+
+svg.trail {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+svg.trail path {
+  fill: none;
+  stroke: var(--highlight-color);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
