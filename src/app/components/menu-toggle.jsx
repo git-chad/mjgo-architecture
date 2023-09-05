@@ -10,9 +10,11 @@ const MenuToggle = () => {
     const menuToggle = document.querySelector("a.menu-toggle");
     const menuToggleText = menuToggle.querySelector("span");
     const bodyTag = document.querySelector("body");
+    const blurBackdrop = document.querySelector("div.blur-backdrop")
 
     menuToggle.addEventListener("click", function () {
       bodyTag.classList.toggle("nav-toggle");
+      blurBackdrop.classList.toggle("nav-toggle")
 
       if (bodyTag.classList.contains("nav-toggle")) {
         menuToggleText.innerHTML = "Close";
@@ -54,6 +56,7 @@ const MenuToggle = () => {
 
       <nav className="fixed fake-back top-0 right-0 w-full max-w-[600px] h-full"></nav>
       <nav className="fixed fake-mid top-0 right-0 w-full max-w-[600px] h-full"></nav>
+      <div className="blur-backdrop fixed blur top-0 right-0 w-screen h-full pointer-events-none"></div>
 
       <nav className="fixed flex flex-col justify-between top-0 right-0 w-full max-w-[600px] h-full p-12">
         <div className="internal-links flex flex-col flex-1 justify-center text-5xl font-black space-y-6">

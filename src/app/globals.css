@@ -72,6 +72,16 @@ nav.fake-back {
   transition-delay: 0.2s;
 }
 
+div.blur-backdrop {
+  background-color: va(--background-color);
+  backdrop-filter: blur(0.1px);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+div.blur-backdrop.nav-toggle {
+  opacity: 1; 
+}
 body.nav-toggle nav {
   transform: translate(0, 0);
   transition-delay: 0.2s;
