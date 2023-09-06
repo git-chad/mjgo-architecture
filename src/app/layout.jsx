@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`dark ${cabin.className} flex flex-col items-center overflow-hidden`}
+        className={`dark ${cabin.className} flex flex-col items-center`}
       >
         <div className="fixed top-8 right-8 z-10">
           <MenuToggle />

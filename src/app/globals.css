@@ -140,3 +140,16 @@ svg.trail path {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+.project-title {
+  color: var(--highlight-color);
+}
+
+.info-section {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.info-section.active {
+  opacity: 1;
+}
