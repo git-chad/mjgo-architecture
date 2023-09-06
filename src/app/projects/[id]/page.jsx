@@ -30,11 +30,3 @@ const ProjectPage = ({ params }) => {
 };
 
 export default ProjectPage;
-
-export async function getServerSideProps(context) {
-  return {
-    props: {
-      id: context.params.id,
-    },
-  };
-}
