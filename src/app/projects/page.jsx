@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Montserrat } from "next/font/google";
 import { Cabin } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import projectsData from "../../../../data/projects.json";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -48,7 +49,7 @@ const Projects = () => {
           >
             <figure>
               <Image
-                width={800}
+                width={1000}
                 height={0}
                 src={project.pictures[0]}
                 alt={project.name}
@@ -57,7 +58,7 @@ const Projects = () => {
                 <figcaption className="italic text-lg">
                   {project.name}
                 </figcaption>
-                <span className="text-lg font-bold">details</span>
+                <Link href='/posts/[id]' as={`/projects/${project.id}`} className="text-lg font-bold">details</Link>
               </div>
             </figure>
           </section>
