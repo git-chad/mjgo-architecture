@@ -4,7 +4,7 @@ import { Montserrat } from "next/font/google";
 import { Cabin } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import projectsData from "../../../../data/projects.json";
+import projectsData from "/public/projects.json";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const cabin = Cabin({

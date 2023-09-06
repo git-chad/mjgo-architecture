@@ -1,5 +1,5 @@
 import React from "react";
-import projectsData from "../../../../../data/projects.json";
+import projectsData from "/public/projects.json";
 import Image from "next/image";
 
 const ProjectPage = ({ params }) => {
