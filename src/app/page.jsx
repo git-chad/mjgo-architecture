@@ -37,7 +37,7 @@ export default function Home() {
     <main className="grid-bg h-screen w-screen flex flex-col justify-center items-center">
       <h1
         id="anim-h1"
-        className={`animated ${montserrat.className} font-black text-start sm:fixed left-8 bottom-[50vh] text-6xl sm:text-[16rem] leading-none`}
+        className={`animated ${montserrat.className} font-black text-start sm:fixed left-8 bottom-[50vh] text-6xl lg:text-[9.5rem] leading-none`}
       >
         portfolio.
       </h1>

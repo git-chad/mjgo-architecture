@@ -13,9 +13,9 @@ const cabin = Cabin({
 export default function About() {
 
   return (
-    <section className="grid-bg min-h-screen w-full flex flex-col justify-center items-center">
+    <section className="grid-bg min-h-screen w-full flex flex-col justify-center items-center my-32 sm:mt-0">
       <div className="container mx-auto px-6 md:px-0 flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
-        <div className="flex-1 space-y-6">
+        <div className="flex-1 space-y-6 xl:ml-40">
           <h2
             className={`${montserrat.className} font-black text-5xl md:text-6xl lg:text-7xl leading-tight`}
           >

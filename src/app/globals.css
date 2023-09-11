@@ -153,3 +153,9 @@ svg.trail path {
 .info-section.active {
   opacity: 1;
 }
+
+@media screen and (min-width: 1920px) {
+    #anim-h1 {
+        font-size: 16rem;
+    }
+}

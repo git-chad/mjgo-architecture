@@ -6,7 +6,7 @@ const MouseTrail = () => {
     const svg = document.querySelector("svg.trail");
     const path = svg.querySelector("path");
     let drawPoints = [];
-    let segments = 15;
+    let segments = 9;
     let mouse = {
       x: 0,
       y: 0,
