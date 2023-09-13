@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes resizeHyphen {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 :root {
   --background-color: #f3f3f3;
   --text-color: #1e1e1c;
@@ -162,4 +171,16 @@ svg.trail path {
 
 .proj-title {
   opacity: 0;
+}
+
+span.sub-span {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background-color: var(--text-color);
+  width: 0em;
+  height: 0.2em;
+  vertical-align: middle;
+
+  animation: resizeHyphen 1.2s 2s both cubic-bezier(0.77,0,0.18,1);
 }

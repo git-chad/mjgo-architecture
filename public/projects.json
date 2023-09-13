@@ -1,132 +1,134 @@
 [
-    {
-      "id": "modern-retreat",
-      "name": "Modern Retreat",
-      "shortDescription": "A minimalist modern house situated in the heart of the city.",
-      "materials": [
-        "Brick: 8x2x4 inches",
-        "Hollow brick: 8x8x16 inches",
-        "Oak wood: 2x4 inches",
-        "Pine wood: 2x6 inches"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1558969763-1e911dcd91e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
-        "/path/to/image2.jpg"
-      ]
-    },
-    {
-      "id": "beach-bungalow",
-      "name": "Beach Bungalow",
-      "shortDescription": "A beachside bungalow with panoramic ocean views.",
-      "materials": [
-        "Cement blocks: 8x8x16 inches",
-        "Redwood: 2x6 inches",
-        "Bamboo: 3-inch diameter"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1511840636560-acee95b3a83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
-        "/path/to/image4.jpg"
-      ]
-    },
-    {
-      "id": "mountain-cabin",
-      "name": "Mountain Cabin",
-      "shortDescription": "A cozy cabin situated in the snowy mountains.",
-      "materials": [
-        "Log wood: 10-inch diameter",
-        "Stone: various sizes",
-        "Iron beams: 4x4 inches"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1598416596014-5626a98dcaad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80urban",
-        "/path/to/image6.jpg",
-        "/path/to/image7.jpg"
-      ]
-    },
-    {
-      "id": "urban-loft",
-      "name": "Urban Loft",
-      "shortDescription": "Contemporary loft with an industrial twist in the city's bustling downtown.",
-      "materials": [
-        "Steel beams: 4x8 inches",
-        "Concrete: poured",
-        "Reclaimed wood: various sizes"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1605283176476-63150675f4a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
-        "/path/to/image9.jpg"
-      ]
-    },
-    {
-      "id": "desert-villa",
-      "name": "Desert Villa",
-      "shortDescription": "A sustainable villa in the middle of the arid desert landscape.",
-      "materials": [
-        "Adobe bricks: 16x8x4 inches",
-        "Saguaro wood: 3x4 inches",
-        "Sandstone: various sizes"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80",
-        "/path/to/image11.jpg"
-      ]
-    },
-    {
-      "id": "lake-house",
-      "name": "Lake House",
-      "shortDescription": "A serene getaway on the edge of a tranquil lake.",
-      "materials": [
-        "Driftwood: various sizes",
-        "Glass: tempered",
-        "Slate tiles: 12x12 inches"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
-        "/path/to/image13.jpg"
-      ]
-    },
-    {
-      "id": "kanon-condo",
-      "name": "Kanon Condo",
-      "shortDescription": "A secluded condo in Louisiana",
-      "materials": [
-        "Birch wood: 3x6 inches",
-        "Rope: 2-inch diameter",
-        "Bamboo: 4-inch diameter"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        "/path/to/image15.jpg"
-      ]
-    },
-    {
-      "id": "triplex",
-      "name": "Triad Townhouses",
-      "shortDescription": "Renovated traditional townhouses in Finland",
-      "materials": [
-        "Cobblestone: various sizes",
-        "Thatch roofing",
-        "Maple wood: 2x5 inches"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1505819244306-ef53954f9648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1599&q=80",
-        "/path/to/image17.jpg"
-      ]
-    },
-    {
-      "id": "penthouse-suite",
-      "name": "Penthouse Suite",
-      "shortDescription": "Luxurious apartment with sweeping city views.",
-      "materials": [
-        "Marble: slabs",
-        "Gold fixtures",
-        "Walnut wood: 3x7 inches"
-      ],
-      "pictures": [
-        "https://images.unsplash.com/photo-1613643043796-a370ee99ecbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
-        "/path/to/image19.jpg",
-        "/path/to/image20.jpg"
-      ]
-    }
-  ]
-  
+  {
+    "id": "modern-retreat",
+    "name": "Modern Retreat",
+    "shortDescription": "A minimalist modern house situated in the heart of the city.",
+    "materials": [
+      "Brick: 8x2x4 inches",
+      "Hollow brick: 8x8x16 inches",
+      "Oak wood: 2x4 inches",
+      "Pine wood: 2x6 inches"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1558969763-1e911dcd91e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+      "https://images.unsplash.com/photo-1558969763-1e911dcd91e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+      "https://images.unsplash.com/photo-1558969763-1e911dcd91e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+      "https://images.unsplash.com/photo-1558969763-1e911dcd91e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+    ]
+  },
+  {
+    "id": "beach-bungalow",
+    "name": "Beach Bungalow",
+    "shortDescription": "A beachside bungalow with panoramic ocean views.",
+    "materials": [
+      "Cement blocks: 8x8x16 inches",
+      "Redwood: 2x6 inches",
+      "Bamboo: 3-inch diameter"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1511840636560-acee95b3a83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+      "https://images.unsplash.com/photo-1511840636560-acee95b3a83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+      "https://images.unsplash.com/photo-1511840636560-acee95b3a83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+    ]
+  },
+  {
+    "id": "mountain-cabin",
+    "name": "Mountain Cabin",
+    "shortDescription": "A cozy cabin situated in the snowy mountains.",
+    "materials": [
+      "Log wood: 10-inch diameter",
+      "Stone: various sizes",
+      "Iron beams: 4x4 inches"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1598416596014-5626a98dcaad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80urban",
+      "/path/to/image6.jpg",
+      "/path/to/image7.jpg"
+    ]
+  },
+  {
+    "id": "urban-loft",
+    "name": "Urban Loft",
+    "shortDescription": "Contemporary loft with an industrial twist in the city's bustling downtown.",
+    "materials": [
+      "Steel beams: 4x8 inches",
+      "Concrete: poured",
+      "Reclaimed wood: various sizes"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1605283176476-63150675f4a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
+      "/path/to/image9.jpg"
+    ]
+  },
+  {
+    "id": "desert-villa",
+    "name": "Desert Villa",
+    "shortDescription": "A sustainable villa in the middle of the arid desert landscape.",
+    "materials": [
+      "Adobe bricks: 16x8x4 inches",
+      "Saguaro wood: 3x4 inches",
+      "Sandstone: various sizes"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80",
+      "/path/to/image11.jpg"
+    ]
+  },
+  {
+    "id": "lake-house",
+    "name": "Lake House",
+    "shortDescription": "A serene getaway on the edge of a tranquil lake.",
+    "materials": [
+      "Driftwood: various sizes",
+      "Glass: tempered",
+      "Slate tiles: 12x12 inches"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
+      "/path/to/image13.jpg"
+    ]
+  },
+  {
+    "id": "kanon-condo",
+    "name": "Kanon Condo",
+    "shortDescription": "A secluded condo in Louisiana",
+    "materials": [
+      "Birch wood: 3x6 inches",
+      "Rope: 2-inch diameter",
+      "Bamboo: 4-inch diameter"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "/path/to/image15.jpg"
+    ]
+  },
+  {
+    "id": "triplex",
+    "name": "Triad Townhouses",
+    "shortDescription": "Renovated traditional townhouses in Finland",
+    "materials": [
+      "Cobblestone: various sizes",
+      "Thatch roofing",
+      "Maple wood: 2x5 inches"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1505819244306-ef53954f9648?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1599&q=80",
+      "/path/to/image17.jpg"
+    ]
+  },
+  {
+    "id": "penthouse-suite",
+    "name": "Penthouse Suite",
+    "shortDescription": "Luxurious apartment with sweeping city views.",
+    "materials": [
+      "Marble: slabs",
+      "Gold fixtures",
+      "Walnut wood: 3x7 inches"
+    ],
+    "pictures": [
+      "https://images.unsplash.com/photo-1613643043796-a370ee99ecbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
+      "/path/to/image19.jpg",
+      "/path/to/image20.jpg"
+    ]
+  }
+]
