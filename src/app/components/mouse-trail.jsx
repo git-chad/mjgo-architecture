@@ -1,9 +1,8 @@
 "use client";
-import { m } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 const MouseTrail = () => {
-  const [isActive, setIsActive] = useState(window.innerWidth > 768);  // assume 768px as breakpoint
+  const [isActive, setIsActive] = useState(window.innerWidth > 768);  // breakpoint
   useEffect(() => {
 
     if (!isActive) return;

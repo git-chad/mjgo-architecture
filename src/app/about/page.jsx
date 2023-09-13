@@ -17,12 +17,12 @@ export default function About() {
       <div className="container mx-auto px-6 md:px-0 flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
         <div className="flex-1 space-y-6 xl:ml-40">
           <h2
-            className={`${montserrat.className} font-black text-5xl md:text-6xl lg:text-7xl leading-tight`}
+            className={`${montserrat.className} font-black text-5xl md:text-6xl lg:text-7xl leading-tight text-center sm:text-start`}
           >
             About me
           </h2>
           <p
-            className={`anim-text ${cabin.className} text-lg md:text-xl leading-relaxed`}
+            className={`anim-text ${cabin.className} text-lg md:text-xl leading-relaxed text-justify sm:text-start`}
           >
             I&apos;m a creative architect who is deeply passionate about
             marrying the principles of brutalist architecture with
@@ -34,7 +34,7 @@ export default function About() {
             Studies
           </p>
           <p
-            className={`anim-text ${cabin.className} text-lg md:text-xl leading-relaxed mt-2`}
+            className={`anim-text ${cabin.className} text-lg md:text-xl leading-relaxed mt-2  text-justify sm:text-start`}
           >
             Having graduated from Ditella University in Buenos Aires, I learned
             the importance of attention to detail and practical knowledge.

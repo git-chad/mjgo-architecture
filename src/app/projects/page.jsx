@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
 import { Cabin } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
 import projectsData from "/public/projects.json";
 
@@ -16,10 +15,12 @@ const cabin = Cabin({
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);
   const h2Ref = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     console.log('effect triggered');
     const h2 = h2Ref.current;
+    setIsMobile(window.innerWidth > 768);
 
     h2.style.opacity = 0;
     h2.style.transform = "translate(0, 48px)"
@@ -29,7 +30,14 @@ const Projects = () => {
       h2.style.opacity = 1;
       h2.style.transform = "translate(0, 0px)"
     }, 300)
-  }, [])
+
+    if (window.innerWidth <= 768) {
+      setTimeout(() => {
+        h2.style.opacity = 0;  // You can adjust this as needed
+        h2.style.transform = "translate(0, -48px)";  // Adjust the value as per your design
+      }, 1300);
+    }
+  }, [isMobile])
 
   return (
     <main className="projects grid-bg w-screen h-screen flex flex-col md:flex-row justify-center items-center overflow-auto">
