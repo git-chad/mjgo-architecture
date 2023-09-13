@@ -1,8 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import { m } from "framer-motion";
+import React, { useEffect, useState } from "react";
 
 const MouseTrail = () => {
+  const [isActive, setIsActive] = useState(window.innerWidth > 768);  // assume 768px as breakpoint
   useEffect(() => {
+
+    if (!isActive) return;
+
     const svg = document.querySelector("svg.trail");
     const path = svg.querySelector("path");
     let drawPoints = [];
@@ -57,6 +62,8 @@ const MouseTrail = () => {
       const ww = window.innerWidth;
       const wh = window.innerHeight;
 
+      setIsActive(ww > 768);
+
       svg.style.width = ww + "px";
       svg.style.height = wh + "px";
 
@@ -68,7 +75,7 @@ const MouseTrail = () => {
 
     anim();
     resize();
-  }, []);
+  }, [isActive]);
 
   return (
     <div>

@@ -159,3 +159,7 @@ svg.trail path {
         font-size: 16rem;
     }
 }
+
+.proj-title {
+  opacity: 0;
+}
