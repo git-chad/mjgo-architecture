@@ -54,7 +54,7 @@ const Projects = () => {
           Projects
         </h2>
         <span ref={spanRef} className="sub-span"></span>
-        <div className={`info-section ${activeProject ? "active" : ""}`}>
+        <div className={`info-section translate-x-[1000%] sm:translate-x-0 ${activeProject ? "active" : ""}`}>
           <h3 className="project-title text-3xl my-8 font-bold">
             {activeProject?.name}
           </h3>
