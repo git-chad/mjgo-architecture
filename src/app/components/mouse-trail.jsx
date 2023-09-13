@@ -1,9 +1,11 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from "react";
 
 const MouseTrail = () => {
-  const [isActive, setIsActive] = useState(window.innerWidth > 768);  // breakpoint
+  const [isActive, setIsActive] = useState(false);
+
   useEffect(() => {
+    setIsActive(window.innerWidth > 768);
 
     if (!isActive) return;
 
@@ -74,6 +76,11 @@ const MouseTrail = () => {
 
     anim();
     resize();
+
+    return () => {
+      document.removeEventListener("mousemove", move);
+      window.removeEventListener("resize", resize);
+    };
   }, [isActive]);
 
   return (
